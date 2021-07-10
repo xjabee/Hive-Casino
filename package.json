@@ -1,0 +1,22 @@
+{
+  "name": "twitch-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "comtroller": "github:esfox/comtroller",
+    "dotenv": "^10.0.0",
+    "tmi.js": "^1.8.3",
+    "yeonna-core": "0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.11"
+  }
+}
