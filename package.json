@@ -14,7 +14,12 @@
     "comtroller": "github:esfox/comtroller",
     "dotenv": "^10.0.0",
     "tmi.js": "^1.8.3",
-    "yeonna-core": "0.0.1"
+    "twitch": "^4.6.0",
+    "twitch-auth": "^4.6.0",
+    "twitch-eventsub": "^4.6.0",
+    "twitch-eventsub-ngrok": "^4.6.0",
+    "twitch-pubsub-client": "^4.6.0",
+    "yeonna-core": "file:../yeonna/core"
   },
   "devDependencies": {
     "nodemon": "^2.0.11"
