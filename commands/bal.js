@@ -15,7 +15,7 @@ module.exports = {
         //     twitchID: '19264788',
         //     add: true
         // })
-        console.log(context.tags);
+        //console.log(context.tags);
         const points = await getUserPoints({
             twitchChannelID: context.tags['room-id'],
             userIdentifier: context.tags['user-id'],
