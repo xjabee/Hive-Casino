@@ -8,13 +8,21 @@ module.exports = {
     aliases: ['gamble', 'f', 'coinflip'],
     run: async ({ context, params }) => {
         const args = parseParamsToArray(params);
-        const bet = parseInt(args[0]);
         const points = await getUserPoints({
             twitchChannelID: context.tags['room-id'],
             userIdentifier: context.tags['user-id'],
         });
+        if (args[0].toLowerCase() == "all") {
+            bet = points;
+        }
+        else {
+            const bet = parseInt(args[0]);
+        }
         //console.log(bet);
         //console.log(context.tags);
+        if (isNaN(context.tags['user-id'])) {
+            return context.send("please buy 🌭 via channel points");
+        }
         if (isNaN(bet))
             return context.send("please enter bet amount(!bet [amount])");
         if (points >= bet) {

@@ -2,6 +2,7 @@ require('dotenv').config();
 const ngrok = require('ngrok');
 const TES = require('tesjs');
 const { Comtroller } = require('comtroller');
+const client = require("./tmiclient");
 const rewards = require('./commands/rewards');
 
 const comtroller = new Comtroller({
@@ -68,4 +69,5 @@ const comtroller = new Comtroller({
     });
 
     console.log(`Listening on ${baseURL}`);
+    client.say(`xjabee`, `shop is now open!! check channel points rewards!!`);
 })();

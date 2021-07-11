@@ -13,6 +13,7 @@
   "dependencies": {
     "comtroller": "github:esfox/comtroller",
     "dotenv": "^10.0.0",
+    "ngrok": "^4.0.1",
     "tesjs": "^0.4.4",
     "tmi.js": "^1.8.3",
     "yeonna-core": "file:../yeonna/core"
