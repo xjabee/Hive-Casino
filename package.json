@@ -15,11 +15,6 @@
     "dotenv": "^10.0.0",
     "tesjs": "^0.4.4",
     "tmi.js": "^1.8.3",
-    "twitch": "^4.6.0",
-    "twitch-auth": "^4.6.0",
-    "twitch-eventsub": "^4.6.0",
-    "twitch-eventsub-ngrok": "^4.6.0",
-    "twitch-pubsub-client": "^4.6.0",
     "yeonna-core": "file:../yeonna/core"
   },
   "devDependencies": {
