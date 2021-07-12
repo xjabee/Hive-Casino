@@ -65,8 +65,9 @@ const comtroller = new Comtroller({
 
         comtroller.run(event.reward.title.replace(/\s/g, '_'), { event })
 
-
     });
+
+
 
     console.log(`Listening on ${baseURL}`);
     client.say(`xjabee`, `shop is now open!! check channel points rewards!!`);

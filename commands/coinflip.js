@@ -8,6 +8,7 @@ module.exports = {
     aliases: ['gamble', 'f', 'coinflip'],
     run: async ({ context, params }) => {
         const args = parseParamsToArray(params);
+        let bet;
         const points = await getUserPoints({
             twitchChannelID: context.tags['room-id'],
             userIdentifier: context.tags['user-id'],
@@ -16,7 +17,7 @@ module.exports = {
             bet = points;
         }
         else {
-            const bet = parseInt(args[0]);
+            bet = parseInt(args[0]);
         }
         //console.log(bet);
         //console.log(context.tags);
